@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply scroll-smooth;
+    scroll-padding-top: 120px;
+    overflow-y: overlay;
+    /* overflow-x: hidden */
+  }
+
+  body {
+    @apply bg-[#F3EEE5] text-text-dark;
+  }
+
+  h1 {
+    @apply font-antonio uppercase text-[5rem] sm:text-[8rem];
+  }
+
+  h2 {
+    @apply font-antonio uppercase text-2xl sm:text-[2.1rem];
+  }
+
+  h3 {
+    @apply font-galada text-[1.4rem] sm:text-[1.5rem];
+  }
+
+  h4 {
+    @apply font-antonio text-xl sm:text-2xl;
+  }
+
+  p {
+    @apply text-sm;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-[#E7E7E7] tracking-widest text-xs hover:text-white hover:cursor-pointer;
+  }
+
+  .nav-link-dark {
+    @apply text-[#2b2929] font-semibold tracking-widest text-xs hover:text-[#111111] hover:cursor-pointer;
+  }
+
+  .service-item {
+    @apply flex flex-col items-center mb-8 sm:mb-0;
+  }
+}
