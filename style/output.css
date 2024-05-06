@@ -683,12 +683,24 @@ p {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .-top-\[500px\] {
   top: -500px;
 }
 
 .top-0 {
   top: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .z-50 {
@@ -815,6 +827,10 @@ p {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -873,6 +889,23 @@ p {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#000b\] {
+  background-color: #000b;
+}
+
+.bg-\[\#000a\] {
+  background-color: #000a;
+}
+
+.bg-\[\#0009\] {
+  background-color: #0009;
 }
 
 .bg-\[url\(\'\/assets\/mockup-food\.png\'\)\] {
@@ -965,6 +998,16 @@ p {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
