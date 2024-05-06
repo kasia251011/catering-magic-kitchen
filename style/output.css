@@ -833,11 +833,6 @@ p {
   margin-bottom: 1.25rem;
 }
 
-.my-36 {
-  margin-top: 9rem;
-  margin-bottom: 9rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -858,6 +853,14 @@ p {
   margin-top: 0.5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -866,16 +869,24 @@ p {
   margin-top: 1.75rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .box-border {
@@ -985,6 +996,10 @@ p {
   height: 100vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .min-h-52 {
   min-height: 13rem;
 }
@@ -1008,6 +1023,10 @@ p {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-shrink {
@@ -1348,6 +1367,10 @@ p {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1542,6 +1565,10 @@ p {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2175,14 +2202,13 @@ p {
   padding-bottom: 0.75rem;
 }
 
-.py-36 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pl-3 {
@@ -2191,18 +2217,6 @@ p {
 
 .pr-5 {
   padding-right: 1.25rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
-.pt-36 {
-  padding-top: 9rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
 }
 
 .pt-44 {
@@ -2836,6 +2850,10 @@ p {
 @media (min-width: 768px) {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
