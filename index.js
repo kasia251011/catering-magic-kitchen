@@ -44,8 +44,9 @@ const toggleNav = () => {
   }
 };
 
-const handleScroll = () => {
+function handleScroll() {
   const show = window.scrollY > 40;
+
   if (show) {
     makeNavWhite();
   } else {

@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.lg-backdrop.in {
+  opacity: 0.85;
+}
+
+.lg-next, .lg-prev, .lg-outer .lg-thumb-outer {
+  background-color: transparent;
+}
+
 @layer base {
   html,
   body {
@@ -34,6 +42,8 @@
   p {
     @apply text-sm;
   }
+
+
 }
 
 @layer components {
