@@ -29,8 +29,8 @@
     >
       <div class="container flex items-center justify-between py-3 text-white">
         <a href="/" class="flex">
-          <p class="font-galada" id="logo">Magiczna</p>
-          <p class="font-galada text-primary">Kuchnia</p>
+          <p class="font-galada text-lg" id="logo">Magiczna</p>
+          <p class="font-galada text-lg text-primary">Kuchnia</p>
         </a>
         <div class="hidden lg:flex flex-row gap-11 items-center">
           <a class="nav-link" href="#usługi">Usługi</a>
@@ -58,11 +58,12 @@
       </div>
     </nav>
     <main>
-      <header id="/" 
-        class="header  bg-cover text-white bg-[url('/assets/mockup-food.png')]"
+      <header 
+        id="/" 
+        class="header bg-cover h-[90vh] text-white bg-[url('/assets/mockup-food.png')]"
       >
         <div class="container pt-44 pb-12 ">
-          <p class="font-sacramento text-4xl -mb-5 sm:-mb-8">Monika Kołudzka</p>
+          <p class="font-sacramento text-4xl -mb-5 sm:-mb-8">Monika Kołucka</p>
           <h1>Katering</h1>
           <p class="font-galada text-[2.1rem] sm:text-[3.4rem] leading-none">
             <span>Magiczna</span>
@@ -71,15 +72,15 @@
           <div class="bg-primary rounded-md w-fit py-3 px-4 mt-4">
             <a class="font-bold text-md sm:text-lg tracking-widest" href="tel:601-265-400">tel. 601 265 400</a>
           </div>
-          <a href="#usługi" class="flex flex-col items-center mt-32">
+          <a href="#usługi" class="flex flex-col items-center mt-48">
             <img src="assets/icons/arrow-down.svg"/>
             <p class="text-white text-xs mt-3">Poznaj naszą ofertę</p>
           </a>
         </div>
       </header>
-      <section id="usługi" class="container">
-        <h2 class="text-center mt-7 mb-10">Usługi</h2>
-        <div class="my-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <section id="usługi" class="container mt-20 mb-24">
+        <h2 class="text-center mb-10">Usługi</h2>
+        <div class="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div class="service-item">
             <img width="70px" src="./assets/icons/dance.png" />
             <h3 class="my-5">Wesela</h3>
@@ -133,7 +134,7 @@
           <h2 class="text-center mt-24 mb-14">Galeria</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-24">
             <div class="grid gap-4">
-                <a href="./assets/gallery/image00125.jpeg" data-sub-html="Krótki opis">
+                <a href="./assets/gallery/image00125.jpeg" data-sub-html="">
                   <img class="gallery-img " src="./assets/gallery/image00125.jpeg" alt="">
                   
                 </a>
@@ -209,7 +210,7 @@
         <div class="bg-white">
           <div class="container py-10 grid grid-cols-1 sm:grid-cols-2">
             <div >
-              <p class="font-galada text-lg">
+              <p class="font-galada text-2xl">
                 <span class=" text-text-dark">Magiczna</span>
                 <span class=" text-primary">Kuchnia</span>
               </p>
@@ -220,16 +221,20 @@
             <div >
               <h4 >Kontakt</h4>
               <p class="my-3">Skontakuj się w celu poznania aktulnej oferty dań.</p>
-              <div class="flex mb-3">
-                <img src="assets/icons/phone-dark.svg"/>
-                <a class="ml-4 text-sm" href="tel:601 265 400">601 265 400</a>
+              <div class="flex items-center mb-3 mt-6">
+                <img class="w-5" src="assets/icons/person.svg"/>
+                <span class="ml-4 text-sm">Monika Kołucka</span>
               </div>
-              <div class="flex mb-3">
-                <img src="assets/icons/mail.svg"/>
-                <a class="ml-4 text-sm" href="mailto:magiczna.kuchnia@email.com">magiczna.kuchnia@email.com</a>
+              <div class="flex items-center mb-3">
+                <img class="w-5" src="assets/icons/phone-dark.svg"/>
+                <a class="ml-4 text-sm" href="tel:601 265 400"><strong class="font-semibold">601 265 400</strong></a>
               </div>
-              <div class="flex mb-3">
-                <img src="assets/icons/address.svg"/>
+              <div class="flex items-center mb-3">
+                <img class="w-5" src="assets/icons/mail.svg"/>
+                <a class="ml-4 text-sm" href="mailto:magiczna.kuchnia@o2.pl">magiczna.kuchnia@o2.pl</a>
+              </div>
+              <div class="flex items-center mb-3">
+                <img class="w-5" src="assets/icons/address.svg"/>
                 <address class="ml-4 text-sm" >Klewków, Łowicz</address>
               </div>
             </div>
@@ -244,7 +249,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.umd.min.js" integrity="sha512-VOQBxCIgNssJrB8+irZF7L8MvfpAshegc36C3H5QD7vmibXM4uCNaqJIaSNatD2z2ZQQJSx0k+q+m+xsSPp4Xw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-VBbe8aA3uiK90EUKJnZ4iEs0lKXRhzaAXL8CIHWYReUwULzxkOSxlNixn41OLdX0R1KNP23/s76YPyeRhE6P+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.umd.min.js" integrity="sha512-OUF2jbRheQR5yXPCvXN71udWa5cvwPf+shcXM+5GrW1vtNurTn7az8LCP3hS50gm17ULXdh3cdkhiPa0Qqyczw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="index.js"></script>
-    <script src="gallery.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>

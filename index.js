@@ -1,3 +1,5 @@
+import * as gallery from "./gallery.js";
+
 // const [navBackground, setNavBackground] = useState("");
 let navHidden = true;
 const elNav = document.getElementById("navigation");

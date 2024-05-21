@@ -1,0 +1,2 @@
+<!-- 
+    // "build": "npx tailwind build ./style/input.css -o ./style/output.css && rm -r ./dist && mkdir dist && cp ./style/output.css ./dist/output.css && cp ./index.html ./dist/index.html && cp -r ./assets ./dist/assets && cp ./index.js ./dist/index.js", -->
