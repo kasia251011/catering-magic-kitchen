@@ -723,6 +723,10 @@ p {
   margin-bottom: 1.25rem;
 }
 
+.-mb-24 {
+  margin-bottom: -6rem;
+}
+
 .-mb-5 {
   margin-bottom: -1.25rem;
 }
@@ -771,20 +775,12 @@ p {
   margin-top: 1.5rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
-.-mt-20 {
-  margin-top: -5rem;
-}
-
-.-mb-20 {
-  margin-bottom: -5rem;
-}
-
-.-mb-24 {
-  margin-bottom: -6rem;
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .flex {
@@ -815,8 +811,16 @@ p {
   min-height: 13rem;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
 .w-5 {
   width: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-fit {
@@ -828,16 +832,8 @@ p {
   width: 100%;
 }
 
-.w-7 {
-  width: 1.75rem;
-}
-
 .w-4 {
   width: 1rem;
-}
-
-.w-3 {
-  width: 0.75rem;
 }
 
 @keyframes bounce {
