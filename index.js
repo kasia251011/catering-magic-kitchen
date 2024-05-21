@@ -1,9 +1,9 @@
 import * as gallery from "./gallery.js";
 
-// const [navBackground, setNavBackground] = useState("");
 let navHidden = true;
 const elNav = document.getElementById("navigation");
 const elHamburgerNav = document.getElementById("hamburgerNav");
+const toggleNabBtnEl = document.querySelectorAll(".toggle-nav-btn");
 const elLogo = document.getElementById("logo");
 const links = document.querySelectorAll(".nav-link");
 const menuIcon = document.getElementById("menu-icon");
@@ -61,4 +61,7 @@ function handleScroll() {
   }
 }
 
+toggleNabBtnEl.forEach((el) => {
+  el.addEventListener("click", toggleNav);
+});
 document.addEventListener("scroll", handleScroll);

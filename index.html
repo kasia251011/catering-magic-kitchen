@@ -1,68 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Antonio&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Galada&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css" integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="./assets/favicon/logo.png" rel="icon">
-    <link href="./style/output.css" rel="stylesheet" />
-    <title>Katering Magiczna Kuchnia</title>
-  </head>
-  <body>
-    <nav
-      id="navigation"
-      class="fixed w-full z-50 transition ease-in-out duration-500"
-    >
-      <div class="container flex items-center justify-between py-3 text-white">
-        <a href="/" class="flex">
-          <p class="font-galada text-lg" id="logo">Magiczna</p>
-          <p class="font-galada text-lg text-primary">Kuchnia</p>
-        </a>
-        <div class="hidden lg:flex flex-row gap-11 items-center">
-          <a class="nav-link" href="#usługi">Usługi</a>
-          <a class="nav-link" href="#oferta">Oferta</a>
-          <a class="nav-link" href="#galeria">Galeria</a>
-          <a class="nav-link" href="#kontakt">Kontakt</a>
-        </div>
-        <button onClick="toggleNav()" class="lg:hidden btn-icon">
-          <image src="./assets/icons/menu.svg" alt="menu" id="menu-icon" />
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Galada&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css"
+    integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./assets/favicon/logo.png" rel="icon">
+  <link href="./style/output.css" rel="stylesheet" />
+  <title>Katering Magiczna Kuchnia</title>
+</head>
+
+<body>
+  <nav id="navigation" class="fixed w-full z-50 transition ease-in-out duration-500">
+    <div class="container flex items-center justify-between py-3 text-white">
+      <a href="/" class="flex">
+        <p class="font-galada text-lg" id="logo">Magiczna</p>
+        <p class="font-galada text-lg text-primary">Kuchnia</p>
+      </a>
+      <div class="hidden lg:flex flex-row gap-11 items-center">
+        <a class="nav-link" href="#usługi">Usługi</a>
+        <a class="nav-link" href="#oferta">Oferta</a>
+        <a class="nav-link" href="#galeria">Galeria</a>
+        <a class="nav-link" href="#kontakt">Kontakt</a>
       </div>
-      <div
-        id="hamburgerNav"
-        class="bg-white transition-all -top-[500px] ease-in-out duration-700 fixed w-full flex lg:hidden flex-col gap-5 items-center bg-rich-black p-7 container"
-      >
-        <button onClick="toggleNav()" class="lg:hidden btn-icon self-end">
-          <image src="./assets/icons/cancel.svg" alt="menu" />
-        </button>
-        <div class="flex lg:hidden flex-col gap-5 items-center p-7">
-          <a class="nav-link-dark" href="#usługi">Usługi</a>
-          <a class="nav-link-dark" href="#oferta">Oferta</a>
-          <a class="nav-link-dark" href="#galeria">Galeria</a>
-          <a class="nav-link-dark" href="#kontakt">Kontakt</a>
-        </div>
+      <button class="toggle-nav-btn lg:hidden btn-icon">
+        <image src="./assets/icons/menu.svg" alt="menu" id="menu-icon" />
+      </button>
+    </div>
+    <div id="hamburgerNav"
+      class="bg-white transition-all -top-[500px] ease-in-out duration-700 fixed w-full flex lg:hidden flex-col gap-5 items-center bg-rich-black p-7 container">
+      <button class="toggle-nav-btn lg:hidden btn-icon self-end">
+        <image src="./assets/icons/cancel.svg" alt="menu" />
+      </button>
+      <div class="flex lg:hidden flex-col gap-5 items-center p-7">
+        <a class="toggle-nav-btn nav-link-dark" href="#usługi">Usługi</a>
+        <a class="toggle-nav-btn nav-link-dark" href="#oferta">Oferta</a>
+        <a class="toggle-nav-btn nav-link-dark" href="#galeria">Galeria</a>
+        <a class="toggle-nav-btn nav-link-dark" href="#kontakt">Kontakt</a>
       </div>
-    </nav>
-    <main>
-      <header 
-        id="/" 
-        class="header bg-cover h-[90vh] text-white bg-[url('/assets/mockup-food.png')]"
-      >
-        <div class="container pt-44 pb-12 ">
+    </div>
+  </nav>
+  <main>
+    <header id="/" class="header bg-cover h-[90vh] text-white bg-[url('/assets/mockup-food.png')]">
+      <div class="container h-full flex flex-col justify-around">
+        <div>
           <p class="font-sacramento text-4xl -mb-5 sm:-mb-8">Monika Kołucka</p>
           <h1>Katering</h1>
           <p class="font-galada text-[2.1rem] sm:text-[3.4rem] leading-none">
@@ -72,183 +61,198 @@
           <div class="bg-primary rounded-md w-fit py-3 px-4 mt-4">
             <a class="font-bold text-md sm:text-lg tracking-widest" href="tel:601-265-400">tel. 601 265 400</a>
           </div>
-          <a href="#usługi" class="flex flex-col items-center mt-48">
-            <img src="assets/icons/arrow-down.svg"/>
-            <p class="text-white text-xs mt-3">Poznaj naszą ofertę</p>
+        </div>
+        <div>
+          <a href="#usługi" class="flex flex-col items-center -mb-24">
+            <img class="w-4 animate-bounce" src="assets/icons/arrow-down.svg" />
+            <p class="text-white mt-3">Poznaj naszą ofertę</p>
           </a>
         </div>
-      </header>
-      <section id="usługi" class="container mt-20 mb-24">
-        <h2 class="text-center mb-10">Usługi</h2>
-        <div class="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="service-item">
-            <img width="70px" src="./assets/icons/dance.png" />
-            <h3 class="my-5">Wesela</h3>
-            <p class="text-center px-7">
-              Zapewniamy kompleksowy catering nawet dla 200 osób, byście mogli
-              cieszyć się każdą chwilą bez zmartwień.
-            </p>
-          </div>
-          <div class="service-item">
-            <img width="70px" src="./assets/icons/communion.png" />
-            <h3 class="my-5">Komunie</h3>
-            <p class="text-center px-7">
-              Komunie święte to szczególna uroczystość dla całej rodziny, jak i
-              dla dzieci! Nasze menu jest dobrane dla każdego!
-            </p>
-          </div>
-          <div class="service-item">
-            <img width="70px" src="./assets/icons/baptism.png" />
-            <h3 class="my-5">Chrzciny</h3>
-            <p class="text-center px-7">
-              Oferujemy delikatne potrawy, które wprowadzą dobre smaki do życia Twojego maluszka.
-            </p>
-          </div>
-          <div class="service-item">
-            <img width="70px" src="./assets/icons/champagne-glass.png" />
-            <h3 class="my-5 text-center">Imprezy okolicznościowe</h3>
-            <p class="text-center px-7">
-              Nasza różnorodna oferta da Ci możliwość stworzenia wyjątkowej
-              atmosfery na każdą okazję.
-            </p>
-          </div>
+      </div>
+    </header>
+    <section id="usługi" class="container mt-20 mb-24">
+      <h2 class="text-center mb-10">Usługi</h2>
+      <div class="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="service-item">
+          <img width="70px" src="./assets/icons/dance.png" />
+          <h3 class="my-5">Wesela</h3>
+          <p class="text-center px-7">
+            Zapewniamy kompleksowy catering nawet dla 200 osób, byście mogli
+            cieszyć się każdą chwilą bez zmartwień.
+          </p>
         </div>
-      </section>
-      <section id="oferta" class="container">
-        <div class="grid grid-cols-1 md:grid-cols-2 border-white border-solid border-2 p-4  rounded-lg">
-          <div class="bg-[url('/assets/mockup-food.png')] rounded-lg h-full bg-cover min-h-52" ></div>
-          <div class="p-5 sm:p-10">
-            <h3>Nasza oferta</h3>
-            <p>W naszym kateringu każde danie to opowieść o starannie dobranej jakości i tradycji. Nasze ciasta są wypiekane własnoręcznie, aby każdy kęs miał smak domowego ciepła. </p>
+        <div class="service-item">
+          <img width="70px" src="./assets/icons/communion.png" />
+          <h3 class="my-5">Komunie</h3>
+          <p class="text-center px-7">
+            Komunie święte to szczególna uroczystość dla całej rodziny, jak i
+            dla dzieci! Nasze menu jest dobrane dla każdego!
+          </p>
+        </div>
+        <div class="service-item">
+          <img width="70px" src="./assets/icons/baptism.png" />
+          <h3 class="my-5">Chrzciny</h3>
+          <p class="text-center px-7">
+            Oferujemy delikatne potrawy, które wprowadzą dobre smaki do życia Twojego maluszka.
+          </p>
+        </div>
+        <div class="service-item">
+          <img width="70px" src="./assets/icons/champagne-glass.png" />
+          <h3 class="my-5 text-center">Imprezy okolicznościowe</h3>
+          <p class="text-center px-7">
+            Nasza różnorodna oferta da Ci możliwość stworzenia wyjątkowej
+            atmosfery na każdą okazję.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="oferta" class="container">
+      <div class="grid grid-cols-1 md:grid-cols-2 border-white border-solid border-2 p-4  rounded-lg">
+        <div class="bg-[url('/assets/mockup-food.png')] rounded-lg h-full bg-cover min-h-52"></div>
+        <div class="p-5 sm:p-10">
+          <h3>Nasza oferta</h3>
+          <p>W naszym kateringu każde danie to opowieść o starannie dobranej jakości i tradycji. Nasze ciasta są
+            wypiekane własnoręcznie, aby każdy kęs miał smak domowego ciepła. </p>
           </br>
-            <p>Specjalizujemy się w kuchni polskiej, która jest dla nas inspiracją i pasją. Wykorzystujemy lokalne składniki, by podkreślić bogactwo smaków naszych regionów.</p>
-            <div class="bg-primary rounded-md w-fit py-3 px-4 mt-4 flex ">
-              <img src="assets/icons/phone.svg"/>
-              <a class="pl-3 font-bold text-md text-white" href="tel:601-265-400">Zadzwoń do nas</a>
-            </div>
+          <p>Specjalizujemy się w kuchni polskiej, która jest dla nas inspiracją i pasją. Wykorzystujemy lokalne
+            składniki, by podkreślić bogactwo smaków naszych regionów.</p>
+          <div class="bg-primary rounded-md w-fit py-3 px-4 mt-4 flex ">
+            <img src="assets/icons/phone.svg" />
+            <a class="pl-3 font-bold text-md text-white" href="tel:601-265-400">Zadzwoń do nas</a>
           </div>
         </div>
-      </section>
-      <section id="galeria">
-        <div class="container">
-          <h2 class="text-center mt-24 mb-14">Galeria</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-24">
-            <div class="grid gap-4">
-                <a href="./assets/gallery/image00125.jpeg" data-sub-html="">
-                  <img class="gallery-img " src="./assets/gallery/image00125.jpeg" alt="">
-                  
-                </a>
-                <a href="./assets/gallery/image00144.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00144.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00212.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00212.jpeg" alt="">
-                </a>
-            </div>
-            <div class="grid sm:hidden md:grid sm-hidden-images gap-4">
-                <a href="./assets/gallery/image00233.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00233.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00041.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00041.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00057.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00057.jpeg" alt="">
-                </a>
-            </div>
-            <div class="grid  gap-4">
-                <a href="./assets/gallery/image00031.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00031.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00155.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00155.jpeg" alt="">
-                </a>
-                <a class="relative" href="./assets/gallery/image00115.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00115.jpeg" alt="">
-                  <div class="absolute top-0 left-0 w-full h-full bg-[#0009] rounded-lg flex justify-center items-center">
-                    <span class="text-white text-5xl">+ <span id="img-count"></span></span>
-                  </div>
-                </a>
-            </div>
-            <div class="hidden">
-                <a href="./assets/gallery/image00010.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00010.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00038.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00038.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00098.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00098.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00107.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00107.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00132.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00132.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00154.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00154.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00167.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00167.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00168.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00168.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00171.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00171.jpeg" alt="">
-                </a>
-                <a href="./assets/gallery/image00195.jpeg">
-                  <img class="gallery-img " src="./assets/gallery/image00195.jpeg" alt="">
-                </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
+    <section id="galeria">
+      <div class="container">
+        <h2 class="text-center mt-24 mb-14">Galeria</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-24">
+          <div class="grid gap-4">
+            <a href="./assets/gallery/image00125.jpeg" data-sub-html="">
+              <img class="gallery-img " src="./assets/gallery/image00125.jpeg" alt="">
 
-      <footer id="kontakt">
-        <div class="bg-white">
-          <div class="container py-10 grid grid-cols-1 sm:grid-cols-2">
-            <div >
-              <p class="font-galada text-2xl">
-                <span class=" text-text-dark">Magiczna</span>
-                <span class=" text-primary">Kuchnia</span>
-              </p>
-              <a href="https://www.facebook.com/profile.php?id=100057828722637" target="_blank" class="bg-[#366BD9] my-5 flex text-white w-fit p-3 pr-5 rounded-md">
-                <img class="mr-3" src="assets/icons/facebook.svg"/>
+            </a>
+            <a href="./assets/gallery/image00144.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00144.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00212.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00212.jpeg" alt="">
+            </a>
+          </div>
+          <div class="grid sm:hidden md:grid sm-hidden-images gap-4">
+            <a href="./assets/gallery/image00233.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00233.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00041.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00041.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00057.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00057.jpeg" alt="">
+            </a>
+          </div>
+          <div class="grid  gap-4">
+            <a href="./assets/gallery/image00031.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00031.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00155.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00155.jpeg" alt="">
+            </a>
+            <a class="relative" href="./assets/gallery/image00115.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00115.jpeg" alt="">
+              <div class="absolute top-0 left-0 w-full h-full bg-[#0009] rounded-lg flex justify-center items-center">
+                <span class="text-white text-5xl">+ <span id="img-count"></span></span>
+              </div>
+            </a>
+          </div>
+          <div class="hidden">
+            <a href="./assets/gallery/image00010.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00010.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00038.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00038.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00098.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00098.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00107.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00107.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00132.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00132.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00154.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00154.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00167.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00167.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00168.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00168.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00171.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00171.jpeg" alt="">
+            </a>
+            <a href="./assets/gallery/image00195.jpeg">
+              <img class="gallery-img " src="./assets/gallery/image00195.jpeg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="kontakt">
+      <div class="bg-white">
+        <div class="container py-10 grid grid-cols-1 sm:grid-cols-2">
+          <div>
+            <p class="font-galada text-2xl">
+              <span class=" text-text-dark">Magiczna</span>
+              <span class=" text-primary">Kuchnia</span>
+            </p>
+            <a href="https://www.facebook.com/profile.php?id=100057828722637" target="_blank"
+              class="bg-[#366BD9] my-5 flex text-white w-fit p-3 pr-5 rounded-md">
+              <img class="mr-3" src="assets/icons/facebook.svg" />
               Polub nas na facebooku</a>
+          </div>
+          <div>
+            <h4>Kontakt</h4>
+            <p class="my-3">Skontakuj się w celu poznania aktulnej oferty dań.</p>
+            <div class="flex items-center mb-3 mt-6">
+              <img class="w-5" src="assets/icons/person.svg" />
+              <span class="ml-4 text-sm">Monika Kołucka</span>
             </div>
-            <div >
-              <h4 >Kontakt</h4>
-              <p class="my-3">Skontakuj się w celu poznania aktulnej oferty dań.</p>
-              <div class="flex items-center mb-3 mt-6">
-                <img class="w-5" src="assets/icons/person.svg"/>
-                <span class="ml-4 text-sm">Monika Kołucka</span>
-              </div>
-              <div class="flex items-center mb-3">
-                <img class="w-5" src="assets/icons/phone-dark.svg"/>
-                <a class="ml-4 text-sm" href="tel:601 265 400"><strong class="font-semibold">601 265 400</strong></a>
-              </div>
-              <div class="flex items-center mb-3">
-                <img class="w-5" src="assets/icons/mail.svg"/>
-                <a class="ml-4 text-sm" href="mailto:magiczna.kuchnia@o2.pl">magiczna.kuchnia@o2.pl</a>
-              </div>
-              <div class="flex items-center mb-3">
-                <img class="w-5" src="assets/icons/address.svg"/>
-                <address class="ml-4 text-sm" >Klewków, Łowicz</address>
-              </div>
+            <div class="flex items-center mb-3">
+              <img class="w-5" src="assets/icons/phone-dark.svg" />
+              <a class="ml-4 text-sm" href="tel:601 265 400"><strong class="font-semibold">601 265 400</strong></a>
+            </div>
+            <div class="flex items-center mb-3">
+              <img class="w-5" src="assets/icons/mail.svg" />
+              <a class="ml-4 text-sm" href="mailto:magiczna.kuchnia@o2.pl">magiczna.kuchnia@o2.pl</a>
+            </div>
+            <div class="flex items-center mb-3">
+              <img class="w-5" src="assets/icons/address.svg" />
+              <address class="ml-4 text-sm">Klewków, Łowicz</address>
             </div>
           </div>
         </div>
-        <div class="bg-primary">
-          <p class="text-center text-xs py-5 text-white">Made by <a href="https://www.linkedin.com/in/kasia-jankowska-5b07941a9/" target="_blank">@Katarzyna_Jankowska</a> & <a href="https://www.linkedin.com/in/to-makowski/" target="_blank">@Tomasz_Makowski</a></p>
-        </div>
-      </footer>
-    </main>
+      </div>
+      <div class="bg-primary">
+        <p class="text-center text-xs py-5 text-white">Made by <a
+            href="https://www.linkedin.com/in/kasia-jankowska-5b07941a9/" target="_blank">@Katarzyna_Jankowska</a> & <a
+            href="https://www.linkedin.com/in/to-makowski/" target="_blank">@Tomasz_Makowski</a></p>
+      </div>
+    </footer>
+  </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.umd.min.js" integrity="sha512-VOQBxCIgNssJrB8+irZF7L8MvfpAshegc36C3H5QD7vmibXM4uCNaqJIaSNatD2z2ZQQJSx0k+q+m+xsSPp4Xw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-VBbe8aA3uiK90EUKJnZ4iEs0lKXRhzaAXL8CIHWYReUwULzxkOSxlNixn41OLdX0R1KNP23/s76YPyeRhE6P+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.umd.min.js" integrity="sha512-OUF2jbRheQR5yXPCvXN71udWa5cvwPf+shcXM+5GrW1vtNurTn7az8LCP3hS50gm17ULXdh3cdkhiPa0Qqyczw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="index.js" type="module"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.umd.min.js"
+    integrity="sha512-VOQBxCIgNssJrB8+irZF7L8MvfpAshegc36C3H5QD7vmibXM4uCNaqJIaSNatD2z2ZQQJSx0k+q+m+xsSPp4Xw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"
+    integrity="sha512-VBbe8aA3uiK90EUKJnZ4iEs0lKXRhzaAXL8CIHWYReUwULzxkOSxlNixn41OLdX0R1KNP23/s76YPyeRhE6P+Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.umd.min.js"
+    integrity="sha512-OUF2jbRheQR5yXPCvXN71udWa5cvwPf+shcXM+5GrW1vtNurTn7az8LCP3hS50gm17ULXdh3cdkhiPa0Qqyczw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

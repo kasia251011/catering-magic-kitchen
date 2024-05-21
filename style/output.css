@@ -767,12 +767,24 @@ p {
   margin-top: 1rem;
 }
 
-.mt-48 {
-  margin-top: 12rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.-mt-20 {
+  margin-top: -5rem;
+}
+
+.-mb-20 {
+  margin-bottom: -5rem;
+}
+
+.-mb-24 {
+  margin-bottom: -6rem;
 }
 
 .flex {
@@ -816,6 +828,34 @@ p {
   width: 100%;
 }
 
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
 .resize {
   resize: both;
 }
@@ -842,6 +882,10 @@ p {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-11 {
@@ -953,20 +997,12 @@ p {
   padding-bottom: 1.25rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
 .pl-3 {
   padding-left: 0.75rem;
 }
 
 .pr-5 {
   padding-right: 1.25rem;
-}
-
-.pt-44 {
-  padding-top: 11rem;
 }
 
 .text-center {
