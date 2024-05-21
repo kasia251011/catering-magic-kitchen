@@ -21,12 +21,9 @@
 <body>
   <nav id="navigation" class="fixed w-full z-50 transition ease-in-out duration-500">
     <div class="container flex items-center justify-between py-3 text-white">
-      <a href="/" class="flex items-center">
-        <div class="w-4 mb-1 mr-2">
-          <img src="./assets/favicon/logo.png" class="w-full" alt="logo" />
-        </div>
-        <p class="font-galada text-lg" id="logo">Magiczna</p>
-        <p class="font-galada text-lg text-primary">Kuchnia</p>
+      <a href="/">
+        <span class="font-galada text-lg" id="logo">Magiczna</span>
+        <span class="font-galada text-lg text-primary">Kuchnia</span>
       </a>
       <div class="hidden lg:flex flex-row gap-11 items-center">
         <a class="nav-link" href="#usługi">Usługi</a>
@@ -52,8 +49,8 @@
     </div>
   </nav>
   <main>
-    <header id="/" class="header bg-cover h-[90vh] text-white bg-[url('/assets/mockup-food.png')]">
-      <div class="container h-full flex flex-col justify-around">
+    <header id="/" class="relative header bg-cover bg-center h-[90vh] text-white bg-[url('/assets/hero-bg.jpeg')]">
+      <div class="relative container h-full flex flex-col justify-around z-10">
         <div>
           <p class="font-sacramento text-4xl -mb-5 sm:-mb-8">Monika Kołucka</p>
           <h1>Katering</h1>
@@ -72,6 +69,7 @@
           </a>
         </div>
       </div>
+      <div class="top-0 absolute w-full h-full bg-[#0000008f]"></div>
     </header>
     <section id="usługi" class="container mt-20 mb-24">
       <h2 class="text-center mb-10">Usługi</h2>
@@ -111,7 +109,9 @@
     </section>
     <section id="oferta" class="container">
       <div class="grid grid-cols-1 md:grid-cols-2 border-white border-solid border-2 p-4  rounded-lg">
-        <div class="bg-[url('/assets/mockup-food.png')] rounded-lg h-full bg-cover min-h-52"></div>
+        <div class="relative bg-[url('/assets/offer-bg.jpeg')] rounded-lg h-full bg-cover min-h-52">
+          <div class="top-0 absolute w-full h-full bg-[#00000033]"></div>
+        </div>
         <div class="p-5 sm:p-10">
           <h3>Nasza oferta</h3>
           <p>W naszym kateringu każde danie to opowieść o starannie dobranej jakości i tradycji. Nasze ciasta są
