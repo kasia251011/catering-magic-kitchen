@@ -6,7 +6,9 @@
   opacity: 0.85;
 }
 
-.lg-next, .lg-prev, .lg-outer .lg-thumb-outer {
+.lg-next,
+.lg-prev,
+.lg-outer .lg-thumb-outer {
   background-color: transparent;
 }
 
@@ -42,8 +44,6 @@
   p {
     @apply text-sm;
   }
-
-
 }
 
 @layer components {
@@ -57,5 +57,9 @@
 
   .service-item {
     @apply flex flex-col items-center mb-8 sm:mb-0;
+  }
+
+  .gallery-img {
+    @apply h-auto max-w-full rounded-lg;
   }
 }

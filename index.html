@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css" integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css" integrity="sha512-vIrTyLijDDcUJrQGs1jduUCSVa3+A2DaWpVfNyj4lmXkqURVQJ8LL62nebC388QV3P4yFBSt/ViDX8LRW0U6uw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css" integrity="sha512-GRxDpj/bx6/I4y6h2LE5rbGaqRcbTu4dYhaTewlS8Nh9hm/akYprvOTZD7GR+FRCALiKfe8u1gjvWEEGEtoR6g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-
+    <link href="./assets/favicon/logo.png" rel="icon">
     <link href="./style/output.css" rel="stylesheet" />
     <title>Katering Magiczna Kuchnia</title>
   </head>
@@ -39,7 +39,7 @@
           <a class="nav-link" href="#kontakt">Kontakt</a>
         </div>
         <button onClick="toggleNav()" class="lg:hidden btn-icon">
-          <image src="./assets/icons/menu.svg" alt="menu" />
+          <image src="./assets/icons/menu.svg" alt="menu" id="menu-icon" />
         </button>
       </div>
       <div
@@ -68,7 +68,7 @@
             <span class="text-primary">Kuchnia</span>
           </p>
           <div class="bg-primary rounded-md w-fit py-3 px-4 mt-4">
-            <p class="font-bold text-md sm:text-lg tracking-widest">tel. 601 265 400</p>
+            <a class="font-bold text-md sm:text-lg tracking-widest" href="tel:601-265-400">tel. 601 265 400</a>
           </div>
           <a href="#usługi" class="flex flex-col items-center mt-32">
             <img src="assets/icons/arrow-down.svg"/>
@@ -122,7 +122,7 @@
             <p>Specjalizujemy się w kuchni polskiej, która jest dla nas inspiracją i pasją. Wykorzystujemy lokalne składniki, by podkreślić bogactwo smaków naszych regionów.</p>
             <div class="bg-primary rounded-md w-fit py-3 px-4 mt-4 flex ">
               <img src="assets/icons/phone.svg"/>
-              <a class="pl-3 font-bold text-md text-white">Zadzwoń do nas</a>
+              <a class="pl-3 font-bold text-md text-white" href="tel:601-265-400">Zadzwoń do nas</a>
             </div>
           </div>
         </div>
@@ -130,53 +130,74 @@
       <section id="galeria">
         <div class="container">
           <h2 class="text-center mt-24 mb-14">Galeria</h2>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-24">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-24">
             <div class="grid gap-4">
-                <a href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" data-sub-html="Krótki opis">
-                  <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+                <a href="./assets/gallery/image00125.jpeg" data-sub-html="Krótki opis">
+                  <img class="gallery-img " src="./assets/gallery/image00125.jpeg" alt="">
                   
                 </a>
-                <a href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg">
-                  <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+                <a href="./assets/gallery/image00144.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00144.jpeg" alt="">
                 </a>
-                <a href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg">
-                  <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
-                </a>
-            </div>
-            <div class="grid gap-4">
-                <a href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg">
-                  <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
-                </a>
-                <a href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg">
-                  <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
-                </a>
-                <a href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg">
-                  <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+                <a href="./assets/gallery/image00212.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00212.jpeg" alt="">
                 </a>
             </div>
-            <div class="grid gap-4">
-                <a href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg">
-                  <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+            <div class="grid sm:hidden md:grid sm-hidden-images gap-4">
+                <a href="./assets/gallery/image00233.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00233.jpeg" alt="">
                 </a>
-                <a href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg">
-                  <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+                <a href="./assets/gallery/image00041.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00041.jpeg" alt="">
                 </a>
-                <a class="relative" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg">
-                  <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+                <a href="./assets/gallery/image00057.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00057.jpeg" alt="">
+                </a>
+            </div>
+            <div class="grid  gap-4">
+                <a href="./assets/gallery/image00031.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00031.jpeg" alt="">
+                </a>
+                <a href="./assets/gallery/image00155.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00155.jpeg" alt="">
+                </a>
+                <a class="relative" href="./assets/gallery/image00115.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00115.jpeg" alt="">
                   <div class="absolute top-0 left-0 w-full h-full bg-[#0009] rounded-lg flex justify-center items-center">
                     <span class="text-white text-5xl">+ <span id="img-count"></span></span>
                   </div>
                 </a>
             </div>
             <div class="hidden">
-                <a href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg">
-                  <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+                <a href="./assets/gallery/image00010.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00010.jpeg" alt="">
                 </a>
-                <a href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg">
-                  <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+                <a href="./assets/gallery/image00038.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00038.jpeg" alt="">
                 </a>
-                <a href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg">
-                  <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+                <a href="./assets/gallery/image00098.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00098.jpeg" alt="">
+                </a>
+                <a href="./assets/gallery/image00107.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00107.jpeg" alt="">
+                </a>
+                <a href="./assets/gallery/image00132.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00132.jpeg" alt="">
+                </a>
+                <a href="./assets/gallery/image00154.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00154.jpeg" alt="">
+                </a>
+                <a href="./assets/gallery/image00167.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00167.jpeg" alt="">
+                </a>
+                <a href="./assets/gallery/image00168.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00168.jpeg" alt="">
+                </a>
+                <a href="./assets/gallery/image00171.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00171.jpeg" alt="">
+                </a>
+                <a href="./assets/gallery/image00195.jpeg">
+                  <img class="gallery-img " src="./assets/gallery/image00195.jpeg" alt="">
                 </a>
             </div>
           </div>

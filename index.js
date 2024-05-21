@@ -4,6 +4,7 @@ const elNav = document.getElementById("navigation");
 const elHamburgerNav = document.getElementById("hamburgerNav");
 const elLogo = document.getElementById("logo");
 const links = document.querySelectorAll(".nav-link");
+const menuIcon = document.getElementById("menu-icon");
 
 const makeNavTransparent = () => {
   elNav.style.backgroundColor = "transparent";
@@ -12,6 +13,7 @@ const makeNavTransparent = () => {
     link.classList.remove("nav-link-dark");
     link.classList.add("nav-link");
   });
+  menuIcon.src = "./assets/icons/menu.svg";
 };
 
 const makeNavWhite = () => {
@@ -21,6 +23,7 @@ const makeNavWhite = () => {
     link.classList.remove("nav-link");
     link.classList.add("nav-link-dark");
   });
+  menuIcon.src = "./assets/icons/menu-dark.svg";
 };
 
 const toggleNav = () => {
@@ -54,6 +57,6 @@ function handleScroll() {
       makeNavTransparent();
     }
   }
-};
+}
 
 document.addEventListener("scroll", handleScroll);
