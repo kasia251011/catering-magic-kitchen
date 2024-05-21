@@ -16,6 +16,7 @@ module.exports = {
         antonio: ["Antonio", "sans-serif"],
         galada: ["Galada", "sans"],
         sans: ["Inter", "sans-serif"],
+        sacramento: ["Sacramento", "sans"],
       },
 
       colors: {
