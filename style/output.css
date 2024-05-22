@@ -709,16 +709,12 @@ p {
   top: 0px;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
-.-z-10 {
-  z-index: -10;
-}
-
 .z-10 {
   z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .my-3 {
@@ -739,10 +735,6 @@ p {
   margin-bottom: -1.25rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -761,10 +753,6 @@ p {
 
 .ml-4 {
   margin-left: 1rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .mr-3 {
@@ -821,10 +809,6 @@ p {
 
 .w-3 {
   width: 0.75rem;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .w-5 {
@@ -929,6 +913,14 @@ p {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-\[\#00000033\] {
+  background-color: #00000033;
+}
+
+.bg-\[\#0000008f\] {
+  background-color: #0000008f;
+}
+
 .bg-\[\#0009\] {
   background-color: #0009;
 }
@@ -948,48 +940,12 @@ p {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#000a\] {
-  background-color: #000a;
+.bg-\[url\(\'\/assets\/hero-bg\.webp\'\)\] {
+  background-image: url('/assets/hero-bg.webp');
 }
 
-.bg-\[\#0000007e\] {
-  background-color: #0000007e;
-}
-
-.bg-\[\#0000006c\] {
-  background-color: #0000006c;
-}
-
-.bg-\[\#0000008f\] {
-  background-color: #0000008f;
-}
-
-.bg-\[\#00000049\] {
-  background-color: #00000049;
-}
-
-.bg-\[\#00000059\] {
-  background-color: #00000059;
-}
-
-.bg-\[\#0000004b\] {
-  background-color: #0000004b;
-}
-
-.bg-\[\#00000033\] {
-  background-color: #00000033;
-}
-
-.bg-\[url\(\'\/assets\/mockup-food\.png\'\)\] {
-  background-image: url('/assets/mockup-food.png');
-}
-
-.bg-\[url\(\'\/assets\/offer-bg\.jpeg\'\)\] {
-  background-image: url('/assets/offer-bg.jpeg');
-}
-
-.bg-\[url\(\'\/assets\/hero-bg\.jpeg\'\)\] {
-  background-image: url('/assets/hero-bg.jpeg');
+.bg-\[url\(\'\/assets\/offer-bg\.webp\'\)\] {
+  background-image: url('/assets/offer-bg.webp');
 }
 
 .bg-cover {
