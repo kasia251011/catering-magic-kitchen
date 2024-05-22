@@ -65,3 +65,9 @@ toggleNabBtnEl.forEach((el) => {
   el.addEventListener("click", toggleNav);
 });
 document.addEventListener("scroll", handleScroll);
+
+window.addEventListener("load", function () {
+  // Hide the loading message and show the content
+  const loadingElement = document.getElementById("loading");
+  loadingElement.classList.add("hidden");
+});
