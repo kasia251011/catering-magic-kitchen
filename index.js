@@ -1,4 +1,4 @@
-import * as gallery from "./gallery.js";
+import * as _gallery from "./gallery.js";
 
 let navHidden = true;
 const elNav = document.getElementById("navigation");
@@ -66,7 +66,7 @@ toggleNabBtnEl.forEach((el) => {
 });
 document.addEventListener("scroll", handleScroll);
 
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
   // Hide the loading message and show the content
   const loadingElement = document.getElementById("loading");
   loadingElement.classList.add("hidden");
